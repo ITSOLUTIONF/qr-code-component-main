@@ -1,0 +1,66 @@
+/* container 324x499 img-qr 286 x 284 padding 16px bottom 42px*/
+
+:root{
+    /*colors definitions*/
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    /*font-family*/
+    --ff-primary: 'Fraunces', serif;
+    --ff-secondary: 'Montserrat', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    background-color: var(--Light-gray);
+}
+.card_container{
+    width: 324px;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 0;
+    background-color: var(--White);
+    border-radius: 16px;
+}
+
+    .card_container .img_qr img{
+        width: 286px;
+        height: 284px;
+        border-radius: 12px;
+        margin-bottom: 22px;
+    }
+
+    .card_container .card-content h1{
+        font-family: var(--ff-primary);
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 22px;
+        color: var(--Dark-blue);
+    }
+
+    .card_container .card-content p{
+        font-family: var(--ff-secondary);
+        font-size: 1.2rem;
+        color: var(--Grayish-blue);
+        text-align: center;
+    }
